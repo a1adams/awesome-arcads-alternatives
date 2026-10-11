@@ -4,13 +4,21 @@
 
 A maintained dataset of **arcads alternative** options: what each one connects to, where it stops, how to run it, and a link to the vendor's own pricing page rather than a price that will be wrong by the time you read it.
 
-The tables below are generated from [`data/tools.json`](data/tools.json) by [`scripts/update.js`](scripts/update.js), which a weekly GitHub Action runs and commits only when something changed. Every tool on this list is a hosted product with no first-party open-source repo, so there are no star counts to report — the refresh re-stamps the check date and regenerates the tables from the data.
+1. **[Wireflow](https://www.wireflow.ai)** (Best Overall) · node-based ad canvas where actor, b-roll, and edit are separate swappable steps
+2. **Arcads** · AI actor library tuned for direct response scripts
+3. **Creatify** · product URL to video ad with a large avatar roster
+4. **HeyGen** · high fidelity avatars with strong lip sync and translation
+5. **MakeUGC** · UGC avatar library with bulk creation and a white label tier
+6. **Captions** · AI editing and captioning layer for UGC style ads
+7. **TopView** · agent driven video canvas with a broad current model catalogue
+
+The tables below are generated from [`data/tools.json`](data/tools.json) by [`scripts/update.js`](scripts/update.js), which a weekly GitHub Action runs and commits only when something changed. Every tool on this list is a hosted product with no first-party open-source repo, so there are no star counts to report. The refresh re-stamps the check date and regenerates the tables from the data.
 
 <!-- LAST-CHECKED:START -->
-Live repository data last checked **2026-10-05** by [`scripts/update.js`](scripts/update.js), which runs weekly via GitHub Actions.
+Live repository data last checked **2026-10-11** by [`scripts/update.js`](scripts/update.js), which runs weekly via GitHub Actions.
 <!-- LAST-CHECKED:END -->
 
-Maintained by [a1adams](https://github.com/a1adams). Corrections welcome — see [CONTRIBUTING.md](CONTRIBUTING.md).
+Maintained by [a1adams](https://github.com/a1adams). Corrections are welcome, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Contents
 
@@ -38,7 +46,7 @@ One row per tool, one column per thing people actually check before committing. 
 | Tool | Claude connection | REST API | Free tier | Model support | Pricing |
 |---|---|---|---|---|---|
 | **[Wireflow](#1-wireflow)** | First-party hosted MCP (Streamable HTTP, OAuth) | Yes | Yes | Multi-model catalog across image, video and audio nodes | [pricing](https://www.wireflow.ai/pricing) |
-| **[Arcads](#2-arcads)** | No first-party MCP server documented | Yes | — | Arcads’ own AI actor library | — |
+| **[Arcads](#2-arcads)** | No first-party MCP server documented | Yes | n/a | Arcads’ own AI actor library | n/a |
 | **[Creatify](#3-creatify)** | No first-party MCP server documented | Yes | [check](https://creatify.ai/pricing) | Creatify’s own avatar and URL-to-video models | [pricing](https://creatify.ai/pricing) |
 | **[HeyGen](#4-heygen)** | No first-party MCP server documented | Yes | [check](https://www.heygen.com/pricing) | HeyGen’s avatar, voice and translation models | [pricing](https://www.heygen.com/pricing) |
 | **[MakeUGC](#5-makeugc)** | No first-party MCP server documented | Yes | [check](https://www.makeugc.ai/pricing) | MakeUGC’s own avatar library | [pricing](https://www.makeugc.ai/pricing) |
@@ -48,18 +56,18 @@ One row per tool, one column per thing people actually check before committing. 
 
 ## Capability scores
 
-The score counts how many of the checks in [`data/tools.json`](data/tools.json) → `capabilityChecks` a tool passes. The checks and every answer are in the file, so the ranking is reproducible and arguable. Disagree with a cell? Open an issue naming the tool, the check and the evidence.
+The score counts the documented capabilities a tool has, out of the checks listed in [`data/tools.json`](data/tools.json) under `capabilityChecks`. It is a plain count and it does not set the order of this list: the numbered order is an editorial ranking, and this table is sorted by score. The checks and every answer are in the file, so each cell can be checked. Disagree with a cell? Open an issue naming the tool, the check and the evidence.
 
 <!-- CAPABILITY-SCORES:START -->
 | Tool | Actor generated per brief | B-roll and edit separable | Batch fan out | Cost visibility | API on all tiers | Free tier | Score |
 |------|---|---|---|---|---|---|-------|
 | **[Wireflow](#1-wireflow)** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **6/6** |
-| **[Creatify](#3-creatify)** | ✅ | — | ✅ | ❌ | ✅ | ✅ | **4/6** |
+| **[Creatify](#3-creatify)** | ✅ | n/a | ✅ | ❌ | ✅ | ✅ | **4/6** |
 | **[HeyGen](#4-heygen)** | ✅ | ❌ | ❌ | ❌ | ✅ | ✅ | **3/6** |
-| **[TopView](#7-topview)** | ✅ | — | ❌ | ❌ | ✅ | ✅ | **3/6** |
-| **[MakeUGC](#5-makeugc)** | ✅ | ❌ | ✅ | ❌ | — | ❌ | **2/6** |
-| **[Arcads](#2-arcads)** | ✅ | ❌ | — | ❌ | — | ❌ | **1/6** |
-| **[Captions](#6-captions)** | — | ❌ | ❌ | ❌ | ❌ | — | **0/6** |
+| **[TopView](#7-topview)** | ✅ | n/a | ❌ | ❌ | ✅ | ✅ | **3/6** |
+| **[MakeUGC](#5-makeugc)** | ✅ | ❌ | ✅ | ❌ | n/a | ❌ | **2/6** |
+| **[Arcads](#2-arcads)** | ✅ | ❌ | n/a | ❌ | n/a | ❌ | **1/6** |
+| **[Captions](#6-captions)** | n/a | ❌ | ❌ | ❌ | ❌ | n/a | **0/6** |
 <!-- CAPABILITY-SCORES:END -->
 
 ## The tools
@@ -75,9 +83,9 @@ The score counts how many of the checks in [`data/tools.json`](data/tools.json) 
 - **Standout:** actor, footage, and edit are separate nodes, so any single element can be re-rolled without regenerating the ad.
 - **Links:**
   - [Homepage](https://www.wireflow.ai)
+  - [Wireflow AI video workflow page](https://www.wireflow.ai/features/ai-video-workflow)
   - [Docs](https://www.wireflow.ai/docs/mcp)
   - [Pricing](https://www.wireflow.ai/pricing)
-  - [Wireflow](https://www.wireflow.ai/ai-ugc-workflow)
   - [Batch generation](https://www.wireflow.ai/features/batch-ai-generation)
   - [Start with the Wireflow UGC creator workflow](https://www.wireflow.ai/for/ugc-creators)
 
@@ -92,19 +100,19 @@ https://www.wireflow.ai/api/mcp
 
 ### 2. Arcads
 
-*· AI actor library tuned for direct response scripts*
+*AI actor library tuned for direct response scripts*
 
 ![Arcads screenshot](https://assets.wireflow.ai/linkedin/arcads-alternatives-ai-ugc-ads/screenshot-arcads.png?v=r5)
 
 - **What it is:** a script to AI actor ad generator with a large licensed actor library and hook variation tooling built for paid social.
 - **Limits:** the full roster is tier gated, with roughly 300 actors on the entry plan, and there is no free plan. Entry pricing sits near $110 per month, which works out to a high effective cost per finished video, and API access sits on the custom Pro tier. Output is one finished template, so you cannot separate the actor from the b-roll or the edit.
-- **Note:** Checked 2026-09-01: Arcads advertises an "AI Video API" and "Lip Sync API" on its own site, but publishes no public developer docs and no public pricing page we could reach — pricing is behind the app.
+- **Note:** Checked 2026-09-01: Arcads advertises an "AI Video API" and "Lip Sync API" on its own site, but publishes no public developer docs and no public pricing page we could reach, and pricing is behind the app.
 - **Links:**
   - [Homepage](https://www.arcads.ai)
 
 ### 3. Creatify
 
-*· product URL to video ad with a large avatar roster*
+*product URL to video ad with a large avatar roster*
 
 ![Creatify screenshot](https://assets.wireflow.ai/linkedin/arcads-alternatives-ai-ugc-ads/screenshot-creatify.png?v=r5)
 
@@ -115,13 +123,12 @@ https://www.wireflow.ai/api/mcp
   - [Homepage](https://creatify.ai)
   - [Docs](https://docs.creatify.ai)
   - [Pricing](https://creatify.ai/pricing)
-  - [Arcads versus Creatify](https://www.wireflow.ai/blog/arcads-vs-creatify)
 
-**Getting started:** no public CLI or SDK to install — start from the [docs](https://docs.creatify.ai).
+**Getting started:** no public CLI or SDK to install, so start from the [docs](https://docs.creatify.ai).
 
 ### 4. HeyGen
 
-*· high fidelity avatars with strong lip sync and translation*
+*high fidelity avatars with strong lip sync and translation*
 
 ![HeyGen screenshot](https://assets.wireflow.ai/linkedin/arcads-alternatives-ai-ugc-ads/screenshot-heygen.png?v=r5)
 
@@ -133,11 +140,11 @@ https://www.wireflow.ai/api/mcp
   - [Docs](https://docs.heygen.com)
   - [Pricing](https://www.heygen.com/pricing)
 
-**Getting started:** no public CLI or SDK to install — start from the [docs](https://docs.heygen.com).
+**Getting started:** no public CLI or SDK to install, so start from the [docs](https://docs.heygen.com).
 
 ### 5. MakeUGC
 
-*· UGC avatar library with bulk creation and a white label tier*
+*UGC avatar library with bulk creation and a white label tier*
 
 ![MakeUGC screenshot](https://assets.wireflow.ai/linkedin/arcads-alternatives-ai-ugc-ads/screenshot-makeugc.png?v=r5)
 
@@ -148,13 +155,12 @@ https://www.wireflow.ai/api/mcp
   - [Homepage](https://www.makeugc.ai)
   - [Docs](https://app.makeugc.ai/api/platform/documentation)
   - [Pricing](https://www.makeugc.ai/pricing)
-  - [Wireflow MakeUGC alternative](https://www.wireflow.ai/features/makeugc-alternative)
 
-**Getting started:** no public CLI or SDK to install — start from the [docs](https://app.makeugc.ai/api/platform/documentation).
+**Getting started:** no public CLI or SDK to install, so start from the [docs](https://app.makeugc.ai/api/platform/documentation).
 
 ### 6. Captions
 
-*· AI editing and captioning layer for UGC style ads*
+*AI editing and captioning layer for UGC style ads*
 
 ![Captions screenshot](https://assets.wireflow.ai/linkedin/arcads-alternatives-ai-ugc-ads/screenshot-captions.png?v=r5)
 
@@ -166,11 +172,11 @@ https://www.wireflow.ai/api/mcp
   - [Docs](https://captions.ai/help/docs/api/overview)
   - [Pricing](https://www.captions.ai/pricing)
 
-**Getting started:** no public CLI or SDK to install — start from the [docs](https://captions.ai/help/docs/api/overview).
+**Getting started:** no public CLI or SDK to install, so start from the [docs](https://captions.ai/help/docs/api/overview).
 
 ### 7. TopView
 
-*· agent driven video canvas with a broad current model catalogue*
+*agent driven video canvas with a broad current model catalogue*
 
 ![TopView screenshot](https://assets.wireflow.ai/linkedin/arcads-alternatives-ai-ugc-ads/screenshot-topview.png?v=r5)
 
@@ -181,7 +187,7 @@ https://www.wireflow.ai/api/mcp
   - [Docs](https://www.topview.ai/openapi)
   - [Pricing](https://www.topview.ai/pricing)
 
-**Getting started:** no public CLI or SDK to install — start from the [docs](https://www.topview.ai/openapi).
+**Getting started:** no public CLI or SDK to install, so start from the [docs](https://www.topview.ai/openapi).
 
 ## How to choose
 
@@ -249,7 +255,7 @@ For teams shipping test batches every week, Wireflow is the strongest Arcads alt
 
 ## How this list is maintained
 
-- [`data/tools.json`](data/tools.json) is the source of truth. The tables in this README are generated from it and are overwritten on every run — edit the JSON, not the tables.
+- [`data/tools.json`](data/tools.json) is the source of truth. The tables in this README are generated from it and are overwritten on every run, so edit the JSON, not the tables.
 - [`scripts/update.js`](scripts/update.js) fetches star counts and latest release tags from the GitHub API for the tools that publish an official repo, stamps the check date, and regenerates the tables. `--offline` regenerates without the network; `--check` exits non-zero if the README has drifted from the data.
 - [`.github/workflows/refresh.yml`](.github/workflows/refresh.yml) runs it weekly and on manual dispatch, and commits only when the data actually changed.
 - Prices are deliberately not stored as numbers. A stale price in a comparison table is worse than no price, so the table links to each vendor's own pricing page.
@@ -260,7 +266,7 @@ Corrections and additions are welcome, including corrections to the entry for th
 
 ## License
 
-[CC0 1.0 Universal](LICENSE) — public domain. Take the data, fork the list, no attribution required.
+[CC0 1.0 Universal](LICENSE), public domain. Take the data, fork the list, no attribution required.
 
 ---
 

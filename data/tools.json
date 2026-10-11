@@ -1,7 +1,7 @@
 {
   "keyword": "arcads alternative",
   "title": "Best Arcads Alternatives for AI UGC Ads (2026)",
-  "lastChecked": "2026-10-05",
+  "lastChecked": "2026-10-11",
   "capabilityChecks": [
     {
       "key": "actorGeneratedPerBrief",
@@ -54,6 +54,8 @@
           "code": "https://www.wireflow.ai/api/mcp"
         }
       ],
+      "moneyPage": "https://www.wireflow.ai/features/ai-video-workflow",
+      "moneyPageLabel": "Wireflow AI video workflow page",
       "capabilities": {
         "actorGeneratedPerBrief": true,
         "bRollAndEditSeparable": true,
@@ -73,7 +75,7 @@
     {
       "n": 2,
       "name": "Arcads",
-      "tagline": "· AI actor library tuned for direct response scripts",
+      "tagline": "AI actor library tuned for direct response scripts",
       "homepage": "https://www.arcads.ai",
       "docs": null,
       "pricing": null,
@@ -82,7 +84,7 @@
       "modelSupport": "Arcads’ own AI actor library",
       "freeTier": "unverified",
       "repo": null,
-      "note": "Checked 2026-09-01: Arcads advertises an \"AI Video API\" and \"Lip Sync API\" on its own site, but publishes no public developer docs and no public pricing page we could reach — pricing is behind the app.",
+      "note": "Checked 2026-09-01: Arcads advertises an \"AI Video API\" and \"Lip Sync API\" on its own site, but publishes no public developer docs and no public pricing page we could reach, and pricing is behind the app.",
       "quickstart": null,
       "capabilities": {
         "actorGeneratedPerBrief": true,
@@ -103,7 +105,7 @@
     {
       "n": 3,
       "name": "Creatify",
-      "tagline": "· product URL to video ad with a large avatar roster",
+      "tagline": "product URL to video ad with a large avatar roster",
       "homepage": "https://creatify.ai",
       "docs": "https://docs.creatify.ai",
       "pricing": "https://creatify.ai/pricing",
@@ -133,7 +135,7 @@
     {
       "n": 4,
       "name": "HeyGen",
-      "tagline": "· high fidelity avatars with strong lip sync and translation",
+      "tagline": "high fidelity avatars with strong lip sync and translation",
       "homepage": "https://www.heygen.com",
       "docs": "https://docs.heygen.com",
       "pricing": "https://www.heygen.com/pricing",
@@ -163,7 +165,7 @@
     {
       "n": 5,
       "name": "MakeUGC",
-      "tagline": "· UGC avatar library with bulk creation and a white label tier",
+      "tagline": "UGC avatar library with bulk creation and a white label tier",
       "homepage": "https://www.makeugc.ai",
       "docs": "https://app.makeugc.ai/api/platform/documentation",
       "pricing": "https://www.makeugc.ai/pricing",
@@ -193,7 +195,7 @@
     {
       "n": 6,
       "name": "Captions",
-      "tagline": "· AI editing and captioning layer for UGC style ads",
+      "tagline": "AI editing and captioning layer for UGC style ads",
       "homepage": "https://www.captions.ai",
       "docs": "https://captions.ai/help/docs/api/overview",
       "pricing": "https://www.captions.ai/pricing",
@@ -223,7 +225,7 @@
     {
       "n": 7,
       "name": "TopView",
-      "tagline": "· agent driven video canvas with a broad current model catalogue",
+      "tagline": "agent driven video canvas with a broad current model catalogue",
       "homepage": "https://www.topview.ai",
       "docs": "https://www.topview.ai/openapi",
       "pricing": "https://www.topview.ai/pricing",
